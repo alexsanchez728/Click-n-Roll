@@ -20,10 +20,7 @@ public class ClickForPath : MonoBehaviour
         {
             if (Physics.Raycast(ray, out hit, 100))
             {
-                //if (hit.collider.CompareTag("Ground"))
-                //{
                     clicked = true;
-                //}
             }
         }
 

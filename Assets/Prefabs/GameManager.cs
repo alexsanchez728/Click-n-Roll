@@ -7,15 +7,17 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
     public GameObject FailedLevelUI;
 
-    bool gameHasEnded = false;
+    internal bool gameHasEnded = false;
 
     public void CompleteLevel()
     {
+        gameHasEnded = true;
         completeLevelUI.SetActive(true);
     }
 
     public void FailedLevel()
     {
+        gameHasEnded = true;
         FailedLevelUI.SetActive(true);
     }
 
