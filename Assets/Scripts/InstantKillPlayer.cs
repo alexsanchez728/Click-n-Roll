@@ -1,16 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class InstantKillPlayer : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class InstantKillPlayer : MonoBehaviour
+{
+    void OnTriggerEnter(Collider collider)
+    {
+        var gameManager = FindObjectOfType<GameManager>();
+        gameManager.FailedLevel();
+    }
 }
