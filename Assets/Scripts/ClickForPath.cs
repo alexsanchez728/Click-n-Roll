@@ -7,8 +7,8 @@ public class ClickForPath : MonoBehaviour
     public Rigidbody rb;
     public int maxClicks = 1;
 
-    int clickCount;
-    bool clicked;
+    internal int clickCount;
+    internal bool clicked;
 
 
     void Update()
@@ -46,5 +46,12 @@ public class ClickForPath : MonoBehaviour
         clickCount++;
         clicked = false;
 
+    }
+
+    internal void StopForAnotherClick()
+    {
+        rb.velocity = Vector3.zero;
+        clicked = false;
+        maxClicks += 1;
     }
 }
