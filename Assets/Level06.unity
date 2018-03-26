@@ -1167,6 +1167,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1563017468292150, guid: 10a4c945d973fff45b1acfd748a78c8f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10a4c945d973fff45b1acfd748a78c8f, type: 2}
   m_IsPrefabParent: 0
@@ -1249,7 +1253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95511f2a3e8f66c409773e67df100085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartDelay: 2
   completeLevelUI: {fileID: 1514937092}
   FailedLevelUI: {fileID: 1261197623}
 --- !u!4 &1787071715
@@ -1325,7 +1328,8 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90.00001
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114413760545319206, guid: 877b7b289f14dcb4f90cf9871b989cd6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 877b7b289f14dcb4f90cf9871b989cd6, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &2120991564 stripped

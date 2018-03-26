@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240df349f063e2f468207ad4daa34475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardForce: 550
+  forwardForce: 700
   rb: {fileID: 54260729025788504}
   maxClicks: 1
 --- !u!114 &114442878603927720
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 54260729025788504}
   gameManager: {fileID: 0}
-  maxReflections: 5
+  reflections: 5
 --- !u!135 &135250511274847590
 SphereCollider:
   m_ObjectHideFlags: 1

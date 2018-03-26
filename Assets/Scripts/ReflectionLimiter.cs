@@ -11,6 +11,7 @@ public class ReflectionLimiter : MonoBehaviour
     void Start()
     {
         bounceCounter = FindObjectOfType<ShowRemainingBounces>();
+
     }
 
     void Update()

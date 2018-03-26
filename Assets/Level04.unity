@@ -148,23 +148,6 @@ Transform:
   m_Father: {fileID: 180829059}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
---- !u!1 &102032030 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1343404003794464, guid: 877b7b289f14dcb4f90cf9871b989cd6,
-    type: 2}
-  m_PrefabInternal: {fileID: 2083627342}
---- !u!114 &102032035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 102032030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f19b3c334dd0a62428799ea0c3240583, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1787071714}
 --- !u!1 &180829058
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +473,10 @@ Prefab:
     - target: {fileID: 224775227646951746, guid: 10a4c945d973fff45b1acfd748a78c8f,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563017468292150, guid: 10a4c945d973fff45b1acfd748a78c8f, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1633,7 +1620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95511f2a3e8f66c409773e67df100085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartDelay: 2
   completeLevelUI: {fileID: 297429443}
   FailedLevelUI: {fileID: 297429442}
 --- !u!4 &1787071715
@@ -1698,18 +1684,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4000971419172556, guid: 877b7b289f14dcb4f90cf9871b989cd6, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2.2869
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000971419172556, guid: 877b7b289f14dcb4f90cf9871b989cd6, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 3.564
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000971419172556, guid: 877b7b289f14dcb4f90cf9871b989cd6, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.99
-      objectReference: {fileID: 0}
+    - target: {fileID: 114082443976432944, guid: 877b7b289f14dcb4f90cf9871b989cd6,
+        type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1787071714}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 877b7b289f14dcb4f90cf9871b989cd6, type: 2}
   m_IsPrefabParent: 0

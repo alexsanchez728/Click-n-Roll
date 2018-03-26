@@ -2,9 +2,9 @@
 
 public class InstantKillPlayer : MonoBehaviour
 {
+    public GameManager gameManager;
     void OnTriggerEnter(Collider collider)
     {
-        var gameManager = FindObjectOfType<GameManager>();
         gameManager.FailedLevel();
     }
 }
