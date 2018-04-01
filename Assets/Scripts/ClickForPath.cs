@@ -4,6 +4,7 @@ public class ClickForPath : MonoBehaviour
 {
 
     public float forwardForce = 250f;
+    public float topSpeed = 750f;
     public Rigidbody rb;
     public int maxClicks = 1;
 
@@ -42,6 +43,10 @@ public class ClickForPath : MonoBehaviour
         transform.LookAt(rayPoint);
 
         rb.AddForce(transform.forward * forwardForce);
+        if (rb.velocity.magnitude > topSpeed)
+        {
+            rb.velocity = rb.velocity.normalized * topSpeed;
+        }
 
         clickCount++;
         clicked = false;

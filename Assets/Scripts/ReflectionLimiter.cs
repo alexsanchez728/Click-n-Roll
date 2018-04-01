@@ -11,19 +11,21 @@ public class ReflectionLimiter : MonoBehaviour
     void Start()
     {
         bounceCounter = FindObjectOfType<ShowRemainingBounces>();
-
     }
 
     void Update()
     {
-        if (reflections == 0)
+        if (reflections <= 0)
         {
+            foreach (Collider c in GetComponents<Collider>())
+            {
+                c.enabled = false;
+            }
             gameManager.FailedLevel();
         }
         if (gameManager.gameHasEnded)
         {
             rb.velocity = Vector3.zero;
-
         }
 
         bounceCounter.Show(reflections);
