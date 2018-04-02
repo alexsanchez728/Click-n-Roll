@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ReflectionLimiter : MonoBehaviour
 {
@@ -7,10 +8,14 @@ public class ReflectionLimiter : MonoBehaviour
     public int reflections = 5;
 
     ShowRemainingBounces bounceCounter;
+    ShowLevel levelCounter;
 
     void Start()
     {
         bounceCounter = FindObjectOfType<ShowRemainingBounces>();
+        levelCounter = FindObjectOfType<ShowLevel>();
+
+        levelCounter.Show(SceneManager.GetActiveScene().buildIndex);
     }
 
     void Update()

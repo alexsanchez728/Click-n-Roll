@@ -7,6 +7,6 @@ public class ShowRemainingBounces : MonoBehaviour {
 
     internal void Show(int a)
     {
-        bounceText.text = a.ToString();
+        bounceText.text = "Bounces: " + a.ToString();
     }
 }
